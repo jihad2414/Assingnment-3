@@ -11,14 +11,143 @@
     <!-- daisyUi -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<style>      
+    <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/e913bdd378.js" crossorigin="anonymous"></script>
+    <style>      
     .manrope{
-     font-family: "Manrope", sans-serif;
-
-    }
-</style>
+       font-family: "Manrope", sans-serif;
+      }
+    </style>
 </head>
-<body>
-    
+<body class="manrope">
+<header>
+<!-- nav start here -->
+<div class="navbar  max-w-6xl m-auto">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg aria-label="Menu" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a><span class="text-[#FF4240]">Home</span></a></li>
+        <li><a>About</a></li>
+        <li><a>Pages</a></li>
+        <li><a>Blog</a></li>
+        <li><a>Contact</a></li>
+      
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-4xl font-extrabold ">Hockey<span class="text-[#FF4240]">’</span>s</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 font-bold">
+        <li><a><span class="text-[#FF4240]">Home</span></a></li>
+        <li><a>About</a></li>
+        <li><a>Pages</a></li>
+        <li><a>Blog</a></li>
+        <li><a>Contact</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end gap-2">
+   <i class="fa-solid fa-magnifying-glass "></i>
+    <a class="btn text-white bg-[#FF4240]">Get Ticket</a>
+  </div>
+</div>
+<!-- banner section -->
+<div class="max-w-6xl m-auto mt-14">
+<div class="carousel w-full">
+  <div id="slide1" class="carousel-item relative w-full h-[450px] rounded-lg" style="background-image: url('Images/1.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+          <div class="bg-black hidden lg:block absolute right-[5%] bottom-[8%] text-white p-6 space-y-2 rounded-lg w-[460px] h-40">
+        <h1 class="text-2xl font-bold">Meet all the heroes from the field</h1>
+        <p class="text-xs text-[#FFFFFF]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
+      <div class="absolute left-5 right-5 top-4/5 flex -translate-y-1/2 transform gap-4">
+      <a href="#slide4" class="btn btn-circle text-white bg-black border-none">❮</a>
+      <a href="#slide2" class="btn btn-circle text-white bg-black border-none">❯</a>
+     </div>
+  </div>
+
+    <div id="slide2" class="carousel-item relative w-full lg:h-[450px]  rounded-lg" style="background-image: url('Images/2.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+          <div class="bg-black absolute hidden lg:block  right-[5%] bottom-[8%] text-white p-6 space-y-2 rounded-lg w-[460px] h-40">
+        <h1 class="text-2xl font-bold">Meet all the heroes from the field</h1>
+        <p class="text-xs text-[#FFFFFF]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
+      <div class="absolute left-5 right-5 top-4/5 flex -translate-y-1/2 transform gap-4">
+      <a href="#slide1" class="btn btn-circle text-white bg-black border-none">❮</a>
+      <a href="#slide3" class="btn btn-circle text-white bg-black border-none">❯</a>
+     </div>
+  </div>
+
+      <div id="slide3" class="carousel-item relative w-full lg:h-[450px] rounded-lg" style="background-image: url('Images/3.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+          <div class="bg-black absolute hidden lg:block  right-[5%] bottom-[8%] text-white p-6 space-y-2 rounded-lg w-[460px] h-40">
+        <h1 class="text-2xl font-bold">Meet all the heroes from the field</h1>
+        <p class="text-xs text-[#FFFFFF]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
+      <div class="absolute left-5 right-5 top-4/5 flex -translate-y-1/2 transform gap-4">
+      <a href="#slide2" class="btn btn-circle text-white bg-black border-none">❮</a>
+      <a href="#slide4" class="btn btn-circle text-white bg-black border-none">❯</a>
+     </div>
+
+  </div>
+
+        <div id="slide4" class="carousel-item relative w-full lg:h-[450px]  rounded-lg" style="background-image: url('Images/4.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+          <div class="bg-black absolute hidden lg:block lg:right-[5%] lg:bottom-[8%] text-white p-6 space-y-2 rounded-lg w-[460px] h-40 ">
+        <h1 class="text-2xl font-bold">Meet all the heroes from the field</h1>
+        <p class="text-xs text-[#FFFFFF]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
+      <div class="absolute left-5 right-5 top-4/5 flex -translate-y-1/2 transform gap-4">
+      <a href="#slide3" class="btn btn-circle text-white bg-black border-none">❮</a>
+      <a href="#slide1" class="btn btn-circle text-white bg-black border-none">❯</a>
+     </div>
+  </div>
+
+</div>
+</div>
+</header>
+<main>
+    <!-- professional section -->
+<section class="max-w-6xl m-auto">
+<h1 class="font-extrabold text-4xl text-center mt-8">Professional Hockeys Club</h1>
+<p class="font-normal text-xs text-center mt-4 space-y-3">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-14 max-w-5xl gap-8  m-auto">
+<!-- progress 1 -->
+<div class=" flex "> 
+<div class="text-center space-y-3">
+<div class="radial-progress text-red-700" style="--value:87;" aria-valuenow="87" role="progressbar">87%</div>
+<h1 class="font-semibold text-xl">Prayer Facility</h1>
+<p class="text-sm">Amet consectetur. Condimentum dignissim adipiscing .</p>
+</div>
+</div>
+<!-- progress 2 -->
+ <div class=" flex "> 
+<div class="text-center space-y-3">
+<div class="radial-progress text-green-700" style="--value:95;" aria-valuenow="95" role="progressbar">95%</div>
+<h1 class="font-semibold text-xl">Experienced Coach</h1>
+<p class="text-sm">Amet consectetur. Condimentum dignissim adipiscing .</p>
+</div>
+</div>
+ <!-- progress 3 -->
+ <div class=" flex "> 
+<div class="text-center space-y-3">
+<div class="radial-progress text-yellow-500" style="--value:90;" aria-valuenow="90" role="progressbar">90%</div>
+<h1 class="font-semibold text-xl">Senior Player</h1>
+<p class="text-sm">Amet consectetur. Condimentum dignissim adipiscing .</p>
+</div>
+</div>
+<!-- progress 4 -->
+<div class=" flex "> 
+<div class="text-center space-y-3">
+<div class="radial-progress text-blue-700" style="--value:80;" aria-valuenow="80" role="progressbar">80%</div>
+<h1 class="font-semibold text-xl">Training Ground</h1>
+<p class="text-sm">Amet consectetur. Condimentum dignissim adipiscing .</p>
+</div>
+</div>
+</div>
+
+</section>
+</main>
 </body>
 </html>
